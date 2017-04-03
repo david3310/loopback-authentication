@@ -1,0 +1,39 @@
+{
+  "name": "loopback-example-user-management",
+  "version": "1.0.0",
+  "description": "LoopBack user management example",
+  "main": "server/server.js",
+  "scripts": {
+    "pretest": "jshint .",
+    "start": "node .",
+    "test": "tape tests/**/*.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.10.0",
+    "composable-middleware": "^0.3.0",
+    "compression": "^1.0.3",
+    "cors": "^2.8.1",
+    "express-jwt": "^5.1.0",
+    "jsonwebtoken": "^7.3.0",
+    "loopback": "^3.0.0",
+    "loopback-boot": "^2.4.0",
+    "loopback-component-explorer": "^2.1.0",
+    "passport": "^0.3.2",
+    "passport-google-oauth": "^1.0.0",
+    "passport-google-oauth20": "^1.0.0",
+    "passport-linkedin": "^1.0.0",
+    "passport-linkedin-oauth2": "^1.5.0",
+    "passport-local": "^1.0.0",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^1.1.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.6",
+    "tape": "^4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strongloop/loopback-example-user-management.git"
+  },
+  "license": "MIT"
+}
