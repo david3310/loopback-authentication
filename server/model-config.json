@@ -8,30 +8,30 @@
     ]
   },
   "User": {
-    "dataSource": "db",
+    "dataSource": "mysqldb",
     "public": false
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "mysqldb",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "mysqldb",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "mysqldb",
     "public": false
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "mysqldb",
     "public": false
   },
   "Email": {
     "dataSource": "emailDs"
   },
   "user": {
-    "dataSource": "db",
+    "dataSource": "mysqldb",
     "public": true
   }
 }

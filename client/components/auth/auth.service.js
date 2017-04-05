@@ -141,6 +141,27 @@ angular.module('demoApp')
        */
       getToken: function() {
         return $cookieStore.get('token');
+      },
+      /**
+       * Reset Password
+       */
+      resetPassword: function(email, callback) {
+        var cb = callback || angular.noop;
+        var deferred = $q.defer();
+        $http.post('/request-password-reset', {
+          email: email
+        }).
+        then(function(data) {
+          deferred.resolve(data);
+          return cb();
+        }).
+        catch(function(err) {
+
+          deferred.reject(err);
+          return cb(err);
+        }.bind(this));
+
+        return deferred.promise;
       }
     };
   });

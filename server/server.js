@@ -46,3 +46,15 @@ boot(app, __dirname, function(err) {
   if (require.main === module)
     app.start();
 });
+
+
+var appModels = ['user', 'AccessToken', 'ACL', 'RoleMapping', 'Role'];
+
+var ds = app.dataSources.mysqldb;
+ds.isActual(appModels, function(err, actual) {
+  if (!actual) {
+    ds.autoupdate(appModels, function(err) {
+      if (err) throw (err);
+    });
+  }
+});

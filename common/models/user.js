@@ -41,17 +41,17 @@ module.exports = function(User) {
 
   //send password reset link when requested
   User.on('resetPasswordRequest', function(info) {
+    console.log('info=> ',info);
     var url = 'http://' + config.host + ':' + config.port + '/reset-password';
     var html = 'Click <a href="' + url + '?access_token=' +
-        info.accessToken.id + '">here</a> to reset your password';
-
+        info.accessToken.id + '">here</a> to reset your password for Checkphish';
     User.app.models.Email.send({
       to: info.email,
-      from: info.email,
+      from: 'Checkphish',
       subject: 'Password reset',
       html: html
     }, function(err) {
-      if (err) return console.log('> error sending password reset email');
+      if (err) return console.log('> error sending password reset email', err);
       console.log('> sending password reset email to:', info.email);
     });
   });

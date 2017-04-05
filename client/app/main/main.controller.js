@@ -5,7 +5,6 @@ angular.module('demoApp')
     $scope.awesomeThings = [];
     $scope.currentUser = {};
     $scope.currentUser = Auth.getCurrentUser();
-    console.log('currentUser=> ', Auth.getCurrentUser());
     $scope.addThing = function() {
       if($scope.newThing === '') {
         return;

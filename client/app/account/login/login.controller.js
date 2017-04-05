@@ -20,7 +20,7 @@ angular.module('demoApp')
         .catch( function(err) {
           $scope.errors.other = err.message;
         });
-      }
+      }    
     };
     $scope.linkedin = function() {
       
@@ -28,4 +28,7 @@ angular.module('demoApp')
     $scope.loginOauth = function(provider) {
       $window.location.href = '/auth/' + provider;
     };
+    $scope.forgotpwd = function() {
+      $window.location.href = '/auth/reset-password';
+    }
   });

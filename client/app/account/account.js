@@ -18,5 +18,10 @@ angular.module('demoApp')
         templateUrl: 'app/account/settings/settings.html',
         controller: 'SettingsCtrl',
         authenticate: true
+      })
+      .state('resetPassword', {
+        url: '/resetpassword',
+        templateUrl: 'app/account/resetPassword/resetPassword.html',
+        controller: 'ResetpwdCtrl',
       });
   });

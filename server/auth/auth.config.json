@@ -1,12 +1,12 @@
 {
 	"google": {
-		"clientID": "xxx",
-		"clientSecret": "xxx",
+		"clientID": "985395082988-0v183g5k2b8ftp5uhj43tnmgkmli7sed.apps.googleusercontent.com",
+		"clientSecret": "uSgeNSIhYe3HErkixWl-I9zy",
 		"callbackURL": "/auth/google/callback"
 	},
 	"linkedin" : {
-		"clientID": "xxx",
-		"clientSecret": "xxx",
+		"clientID": "8616ou08z6q0oq",
+		"clientSecret": "ig7KXUCMlvL6DXn7",
 		"callbackURL": "/auth/linkedin/callback"
 	}
 }

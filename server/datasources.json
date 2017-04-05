@@ -17,10 +17,18 @@
           "rejectUnauthorized": false
         },
         "auth": {
-          "user": "email@address.com",
-          "pass": "password"
+          "user": "test@gmail.com",
+          "pass": "test"
         }
       }
     ]
+  },
+  "mysqldb": {
+    "host": "localhost",
+    "database": "checkphish",
+    "name": "mysqldb",
+    "user": "root",
+    "connector": "mysql",
+    "collation": "latin1_swedish_ci"
   }
 }
